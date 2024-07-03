@@ -1,0 +1,29 @@
+import { Link } from "react-router-dom";
+
+const AboutMe = () => {
+  return (
+    <div className="my-10">
+      <h3 className="text-center font-bold text-3xl mt-16 mb-5">About Me</h3>
+      <p className="text-black lg:text-xl text-xs">
+        I'm Nayeem, a dedicated Junior Frontend Developer driven by a passion
+        for creating visually stunning and user-friendly web interfaces. My
+        expertise spans HTML, CSS, JavaScript, React.js, Node.js, Express.js,
+        Firebase, MongoDB, and Tailwind CSS. With a strong focus on design and
+        an ongoing commitment to enhancing my skills, I strive to deliver
+        seamless and engaging user experiences.
+      </p>
+      <div>
+        <div class="flex justify-center items-center py-5">
+          <Link
+            to={"/about"}
+            className="bg-gradient-to-r from-blue-500 via-green-500 to-purple-500 hover:bg-gradient-to-r hover:from-purple-500 hover:via-pink-500 hover:to-red-500 text-white font-bold py-2 px-4 rounded"
+          >
+            about more
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AboutMe;

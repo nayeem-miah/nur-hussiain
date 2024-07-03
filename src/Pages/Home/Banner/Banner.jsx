@@ -3,13 +3,16 @@ import { Typewriter } from "react-simple-typewriter";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import { IoCallSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import profile from "../../../assets/Profile.png";
+import bannerImg from "../../../assets/Banner.jpg";
+import pdf from "../../../assets/08096278-85a0-43ca-af1c-a9e8ef9ebd8e.pdf";
+
 const Banner = () => {
   return (
     <div
       className="hero  "
       style={{
-        backgroundImage:
-          "url(https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?t=st=1719982518~exp=1719986118~hmac=293847f0a4c385978aab579fdf66fecf274f94f6a780f014a2cb459c094eebd9&w=900)",
+        backgroundImage: `url(${bannerImg})`,
       }}
     >
       <div className="hero-overlay bg-opacity-60"></div>
@@ -48,20 +51,25 @@ const Banner = () => {
             efficient web applications using MongoDB, Express, React, and
             Node.js
           </p>
-          <div className="lg:flex gap-2">
-            <button className="btn btn-primary flex items-center">
+          <div className="flex gap-2 items-center ">
+            <a
+              href={pdf}
+              className="btn btn-secondary flex items-center   hover:bg-purple-700"
+              download={"resume"}
+            >
               <FaCloudDownloadAlt></FaCloudDownloadAlt> Download CV
-            </button>
-            <br />
-
-            <Link to={"/contact"} className="btn btn-primary flex items-center">
+            </a>
+            <Link
+              to={"/contact"}
+              className="btn btn-secondary hover:bg-purple-700 flex items-center"
+            >
               <IoCallSharp></IoCallSharp> Contact
             </Link>
           </div>
         </div>
         <div className="">
           <img
-            src="https://i.ibb.co/hyTL9zz/05-removebg.png"
+            src={profile}
             alt=""
             className="lg:h-[500px] h-[300px] md:h-[400px]"
           />
