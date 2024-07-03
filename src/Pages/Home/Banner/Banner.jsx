@@ -1,0 +1,74 @@
+import React from "react";
+import { Typewriter } from "react-simple-typewriter";
+import { FaCloudDownloadAlt } from "react-icons/fa";
+import { IoCallSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
+const Banner = () => {
+  return (
+    <div
+      className="hero  "
+      style={{
+        backgroundImage:
+          "url(https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?t=st=1719982518~exp=1719986118~hmac=293847f0a4c385978aab579fdf66fecf274f94f6a780f014a2cb459c094eebd9&w=900)",
+      }}
+    >
+      <div className="hero-overlay bg-opacity-60"></div>
+      <div className=" text-neutral-content text-center lg:flex items-center justify-between">
+        <div className="max-w-md">
+          <h1 className="mb-5 md:text-4xl text-2xl lg:text-5xl font-bold text-purple-600">
+            {" "}
+            <Typewriter
+              words={["Hey, I'm Nayeem."]}
+              loop={Infinity}
+              cursor
+              cursorStyle="_"
+              typeSpeed={90}
+              deleteSpeed={50}
+              delaySpeed={1000}
+            />
+          </h1>
+          <h1 className="mb-5 md:text-2xl text-xl lg:text-3xl font-bold text-orange-600 opacity-60 ">
+            {" "}
+            <Typewriter
+              words={[
+                "I am a Frontend Developer ",
+                "I'm a MERN Stack Developer",
+              ]}
+              loop={Infinity}
+              cursor
+              cursorStyle="_"
+              typeSpeed={80}
+              deleteSpeed={50}
+              delaySpeed={1000}
+            />
+          </h1>
+
+          <p className="mb-5 font-bold lg:text-xl text-xs">
+            I craft beautiful and responsive web interfaces.I build scalable and
+            efficient web applications using MongoDB, Express, React, and
+            Node.js
+          </p>
+          <div className="lg:flex gap-2">
+            <button className="btn btn-primary flex items-center">
+              <FaCloudDownloadAlt></FaCloudDownloadAlt> Download CV
+            </button>
+            <br />
+
+            <Link to={"/contact"} className="btn btn-primary flex items-center">
+              <IoCallSharp></IoCallSharp> Contact
+            </Link>
+          </div>
+        </div>
+        <div className="">
+          <img
+            src="https://i.ibb.co/hyTL9zz/05-removebg.png"
+            alt=""
+            className="lg:h-[500px] h-[300px] md:h-[400px]"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Banner;

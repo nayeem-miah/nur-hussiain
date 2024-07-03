@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Typewriter } from "react-simple-typewriter";
+
 
 const Navbar = () => {
   const [theme, setTheme] = useState("light");
@@ -76,7 +76,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-300 shadow-2xl   fixed z-10    w-full border-b-2 ">
+    <div className="navbar bg-base-200 shadow-2xl   fixed z-10    w-full  ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn  btn-ghost lg:hidden">
@@ -102,17 +102,12 @@ const Navbar = () => {
             {nabLinks}
           </ul>
         </div>
-        <Link to={"/"} className="text-xl lg:text-2xl text-green-600 flex">
-          {/* <img src={News} className="h-9 w-10 rounded opacity-60" /> */}
-          <Typewriter
-            words={["Hey, I'm Nayeem"]}
-            loop={Infinity}
-            cursor
-            cursorStyle="_"
-            typeSpeed={70}
-            deleteSpeed={50}
-            delaySpeed={1000}
-          />
+        <Link to={"/"} className="text-xl lg:text-2xl  flex">
+          {/* <img src={img} className="h-9 w-10 rounded opacity-60" /> */}
+       
+
+        <span className=" font-bold bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text animate-gradient
+">NA<span className="text-orange-600 font-bold">Y</span>EEM</span>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -158,7 +153,9 @@ const Navbar = () => {
         </label>
         <div className="relative  flex items-center  justify-end w-full md:w-auto">
           <div className="  ">
-            <Link className="btn btn-outline btn-accent">Hire ME</Link>
+            <NavLink to={'/'}  className={({ isActive }) =>
+            isActive ? "text-purple-800 font-bold btn btn-outline btn-accent"  : "font-bold btn btn-outline btn-accent"
+          }>Hire ME</NavLink>
           </div>
         </div>
       </div>
