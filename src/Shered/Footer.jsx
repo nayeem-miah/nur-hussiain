@@ -1,25 +1,35 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center bg-base-200 text-base-content rounded p-10">
+    <footer className="footer footer-center bg-base-200 text-xs rounded p-10">
       <nav className="grid grid-flow-col gap-4">
-        <Link to={"/"} className="link link-hover">
-          Home
-        </Link>
-        <Link to={"/about"} className="link link-hover">
-          About us
-        </Link>
-        <Link to={"/skills"} className="link link-hover">
+      <NavLink to={"/"}   className={({ isActive }) =>
+            isActive ? "text-purple-800  link link-hover" : "link link-hover"
+          }>
+          Home 
+        </NavLink>
+        <NavLink to={"/about"}   className={({ isActive }) =>
+            isActive ? "text-purple-800  link link-hover" : "link link-hover"
+          }>
+          About 
+        </NavLink>
+        <NavLink to={"/skills"}   className={({ isActive }) =>
+            isActive ? "text-purple-800  link link-hover" : "link link-hover"
+          }>
           Skills
-        </Link>
-        <Link to={"/projects"} className="link link-hover">
+        </NavLink>
+        <NavLink to={"/projects"}   className={({ isActive }) =>
+            isActive ? "text-purple-800  link link-hover" : "link link-hover"
+          }>
           Projects
-        </Link>
-        <Link to={"/contact"} className="link link-hover">
-          Contact us
-        </Link>
+        </NavLink>
+        <NavLink to={"/contact"}   className={({ isActive }) =>
+            isActive ? "text-purple-800  link link-hover" : "link link-hover"
+          }>
+          contact 
+        </NavLink>
       </nav>
       <nav>
         <div className="grid grid-flow-col gap-4">
@@ -56,12 +66,14 @@ const Footer = () => {
           </a>
         </div>
       </nav>
-      <aside>
-        <p>
+     
+        <div className="text-[14px]">
+          <div>
           Copyright © ${new Date().getFullYear()} - All right reserved by
           Portfolio
-        </p>
-      </aside>
+          </div>
+        </div>
+     
     </footer>
   );
 };
