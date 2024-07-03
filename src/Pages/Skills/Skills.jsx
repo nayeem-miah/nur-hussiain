@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import SkillsCard from "./SkillsCard";
 
 const Skills = () => {
@@ -25,6 +25,15 @@ const Skills = () => {
           <SkillsCard key={skill.id} skill={skill}></SkillsCard>
         ))}
       </div>
+      <div class="flex justify-center items-center py-5 gap-3 my-10">
+
+      <Link 
+            to={"/projects"}
+            className="bg-gradient-to-r from-blue-500 via-green-500 to-purple-500 hover:bg-gradient-to-r hover:from-purple-500 hover:via-pink-500 hover:to-red-500 text-white font-bold py-2 px-4 rounded text-xl"
+          >
+            --Projects--
+          </Link>
+          </div>
     </div>
   );
 };

@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
-
 const Navbar = () => {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
 
   useEffect(() => {
     localStorage.setItem("theme", theme);
@@ -13,9 +12,9 @@ const Navbar = () => {
 
   const handleToggle = e => {
     if (e.target.checked) {
-      setTheme("light");
+      setTheme("synthwave");
     } else {
-      setTheme("dark");
+      setTheme("light");
     }
   };
 
@@ -25,7 +24,7 @@ const Navbar = () => {
         <NavLink
           to="/"
           className={({ isActive }) =>
-            isActive ? "text-purple-800 font-bold" : "font-bold"
+            isActive ? "text-purple-500 font-bold" : "font-bold"
           }
         >
           Home
@@ -36,7 +35,7 @@ const Navbar = () => {
         <NavLink
           to="/about"
           className={({ isActive }) =>
-            isActive ? "text-purple-800 font-bold" : "font-bold"
+            isActive ? "text-purple-500 font-bold" : "font-bold"
           }
         >
           About
@@ -47,7 +46,7 @@ const Navbar = () => {
         <NavLink
           to="/skills"
           className={({ isActive }) =>
-            isActive ? "text-purple-800 font-bold" : "font-bold"
+            isActive ? "text-purple-500 font-bold" : "font-bold"
           }
         >
           Skills
@@ -57,7 +56,7 @@ const Navbar = () => {
         <NavLink
           to="/projects"
           className={({ isActive }) =>
-            isActive ? "text-purple-800 font-bold" : "font-bold"
+            isActive ? "text-purple-500 font-bold" : "font-bold"
           }
         >
           Projects
@@ -67,7 +66,7 @@ const Navbar = () => {
         <NavLink
           to="/contact"
           className={({ isActive }) =>
-            isActive ? "text-purple-800 font-bold" : "font-bold"
+            isActive ? "text-purple-500 font-bold" : "font-bold"
           }
         >
           Contact
@@ -104,10 +103,13 @@ const Navbar = () => {
         </div>
         <Link to={"/"} className="text-xl lg:text-2xl  flex">
           {/* <img src={img} className="h-9 w-10 rounded opacity-60" /> */}
-       
 
-        <span className=" font-bold bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text animate-gradient
-">NA<span className="text-orange-600 font-bold">Y</span>EEM</span>
+          <span
+            className=" font-bold bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text animate-gradient
+"
+          >
+            NA<span className="text-orange-600 font-bold">Y</span>EEM
+          </span>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -153,9 +155,16 @@ const Navbar = () => {
         </label>
         <div className="relative  flex items-center  justify-end w-full md:w-auto">
           <div className="  ">
-            <NavLink to={'/'}  className={({ isActive }) =>
-            isActive ? "text-purple-800 font-bold btn btn-outline btn-accent"  : "font-bold btn btn-outline btn-accent"
-          }>Hire ME</NavLink>
+            <NavLink
+              to={"/"}
+              className={({ isActive }) =>
+                isActive
+                  ? "text-purple-800 font-bold btn btn-outline btn-accent"
+                  : "font-bold btn btn-outline btn-accent"
+              }
+            >
+              Hire ME
+            </NavLink>
           </div>
         </div>
       </div>
