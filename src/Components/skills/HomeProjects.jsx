@@ -6,7 +6,7 @@ import { FaArrowRight } from "react-icons/fa";
 const HomeProjects = () => {
   const [project, setProject] = useState([]);
   useEffect(() => {
-    fetch("../../../public/projects.json")
+    fetch("/projects.json")
       .then(res => res.json())
       .then(data => {
         // console.log(data);

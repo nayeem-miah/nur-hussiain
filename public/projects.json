@@ -7,7 +7,7 @@
     "serverSideLink": "https://github.com/nayeem-miah/on-Time-News-server-12",
     "clientSideLink": "https://github.com/nayeem-miah/on-Time-News-Client-12",
     "liveLink": "https://b9a12-ontimenews.web.app/",
-    "language": ["reactJs, nodejs, expressJs, mongodb"]
+    "language": ["reactJs", "nodejs", "expressJs", "mongodb","firebase"]
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "serverSideLink": "https://github.com/nayeem-miah/my-Blog-server-11",
     "clientSideLink": "https://github.com/nayeem-miah/my-blog-client-11",
     "liveLink": "https://my-personal-blog-fcd20.web.app/",
-    "language": ["reactJs, nodejs, expressJs, mongodb"]
+    "language": ["reactJs", "nodejs", "expressJs", "mongodb"]
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "serverSideLink": "https://github.com/nayeem-miah/b9a10-server-10",
     "clientSideLink": "",
     "liveLink": "https://b9a10-my-dream-country-client.web.app/",
-    "language": ["reactJs, nodejs, expressJs, firebase"]
+    "language": ["reactJs", "nodejs", "expressJs", "firebase"]
   },
   {
     "id": 4,
@@ -37,6 +37,6 @@
     "serverSideLink": "https://github.com/nayeem-miah/b9a10-client-10-realstatc-home-Finnder",
     "clientSideLink": "https://github.com/nayeem-miah/b9a10-client-10-realstatc-home-Finnder",
     "liveLink": "https://cd-b9a9-b9-real-estate-09.web.app/",
-    "language": ["reactJs, nodejs, expressJs, CSS"]
+    "language": ["reactJs", "firebase"  , "javaScript", "CSS"]
   }
 ]

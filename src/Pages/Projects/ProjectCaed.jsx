@@ -9,6 +9,7 @@ const ProjectCard = ({ project }) => {
     Aos.init();
   }, []);
   //   console.log(project);
+  
   return (
     <div >
       <div
@@ -21,8 +22,8 @@ const ProjectCard = ({ project }) => {
         </figure>
         <div className="card-body">
           <h2 className="card-title text-2xl lg:text-3xl">{project.title}</h2>
-          <div> {
-            project.language.map(lan=><div><button className="text-xs lg:text-xl border rounded-full px-2">{lan}</button></div>)}</div>
+          <div className="flex"> {
+            project?.language?.map(lan=><div><button className="text-[10px] lg:text-xl text-blue-600 border rounded-full px-1">#{lan}</button></div>)}</div>
           <p>{project.description}</p>
           <div className="card-actions justify-end grid lg:grid-cols-3 grid-cols-1 ">
             <Link
