@@ -23,7 +23,7 @@ const HomeProjects = () => {
           <ProjectCard key={pro.name} project={pro}></ProjectCard>
         ))}
       </div>
-      <div class="flex justify-center items-center py-5">
+      <div className="flex justify-center items-center py-5">
           <Link
             to={"/projects"}
             className="bg-gradient-to-r from-blue-500 via-green-500 to-purple-500 hover:bg-gradient-to-r hover:from-purple-500 hover:via-pink-500 hover:to-red-500 text-white font-bold py-2 px-4 rounded flex  items-center gap-1"

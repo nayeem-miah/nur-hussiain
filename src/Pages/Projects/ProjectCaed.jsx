@@ -10,7 +10,7 @@ const ProjectCard = ({ project }) => {
   }, []);
   //   console.log(project);
   return (
-    <Link to={project.liveLink}>
+    <div >
       <div
         className="card bg-base-100 h-full w-full shadow-xl"
         data-aos="fade-up"
@@ -20,7 +20,9 @@ const ProjectCard = ({ project }) => {
           <img src={project.img} alt="Shoes" />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">{project.title}</h2>
+          <h2 className="card-title text-2xl lg:text-3xl">{project.title}</h2>
+          <div> {
+            project.language.map(lan=><div><button className="text-xs lg:text-xl border rounded-full px-2">{lan}</button></div>)}</div>
           <p>{project.description}</p>
           <div className="card-actions justify-end grid lg:grid-cols-3 grid-cols-1 ">
             <Link
@@ -44,7 +46,7 @@ const ProjectCard = ({ project }) => {
           </div>
         </div>
       </div>
-    </Link>
+    </div>
   );
 };
 

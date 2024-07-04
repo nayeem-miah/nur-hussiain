@@ -6,7 +6,8 @@
     "img": "https://i.ibb.co/KhBb3rt/Screenshot-2024-07-04-012605.png",
     "serverSideLink": "https://github.com/nayeem-miah/on-Time-News-server-12",
     "clientSideLink": "https://github.com/nayeem-miah/on-Time-News-Client-12",
-    "liveLink": "https://b9a12-ontimenews.web.app/"
+    "liveLink": "https://b9a12-ontimenews.web.app/",
+    "language": ["reactJs, nodejs, expressJs, mongodb"]
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "img": "https://i.ibb.co/Y8sYGGm/Screenshot-2024-07-04-015432.png",
     "serverSideLink": "https://github.com/nayeem-miah/my-Blog-server-11",
     "clientSideLink": "https://github.com/nayeem-miah/my-blog-client-11",
-    "liveLink": "https://my-personal-blog-fcd20.web.app/"
+    "liveLink": "https://my-personal-blog-fcd20.web.app/",
+    "language": ["reactJs, nodejs, expressJs, mongodb"]
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "img": "https://i.ibb.co/Tvv4R5t/Screenshot-2024-07-04-013541.png",
     "serverSideLink": "https://github.com/nayeem-miah/b9a10-server-10",
     "clientSideLink": "",
-    "liveLink": "https://b9a10-my-dream-country-client.web.app/"
+    "liveLink": "https://b9a10-my-dream-country-client.web.app/",
+    "language": ["reactJs, nodejs, expressJs, firebase"]
   },
   {
     "id": 4,
@@ -33,6 +36,7 @@
     "img": "https://i.ibb.co/kyk3tsS/Screenshot-2024-07-04-020105.png",
     "serverSideLink": "https://github.com/nayeem-miah/b9a10-client-10-realstatc-home-Finnder",
     "clientSideLink": "https://github.com/nayeem-miah/b9a10-client-10-realstatc-home-Finnder",
-    "liveLink": "https://cd-b9a9-b9-real-estate-09.web.app/"
+    "liveLink": "https://cd-b9a9-b9-real-estate-09.web.app/",
+    "language": ["reactJs, nodejs, expressJs, CSS"]
   }
 ]
