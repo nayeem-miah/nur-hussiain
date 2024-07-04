@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ProjectCard from "../../Pages/Projects/ProjectCaed";
 import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
 
 const HomeProjects = () => {
   const [project, setProject] = useState([]);
@@ -25,9 +26,9 @@ const HomeProjects = () => {
       <div class="flex justify-center items-center py-5">
           <Link
             to={"/projects"}
-            className="bg-gradient-to-r from-blue-500 via-green-500 to-purple-500 hover:bg-gradient-to-r hover:from-purple-500 hover:via-pink-500 hover:to-red-500 text-white font-bold py-2 px-4 rounded"
+            className="bg-gradient-to-r from-blue-500 via-green-500 to-purple-500 hover:bg-gradient-to-r hover:from-purple-500 hover:via-pink-500 hover:to-red-500 text-white font-bold py-2 px-4 rounded flex  items-center gap-1"
           >
-            Show All Projects
+            Show All Projects <FaArrowRight></FaArrowRight>
           </Link>
           </div>
     </div>

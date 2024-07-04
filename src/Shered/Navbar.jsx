@@ -156,12 +156,8 @@ const Navbar = () => {
         <div className="relative  flex items-center  justify-end w-full md:w-auto">
           <div className="  ">
             <NavLink
-              to={"/"}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-purple-800 font-bold btn btn-outline btn-accent"
-                  : "font-bold btn btn-outline btn-accent"
-              }
+              to={"/contact"}
+              className="bg-gradient-to-r flex  items-center gap-1 from-blue-500 via-green-500 to-purple-500 hover:bg-gradient-to-r hover:from-purple-500 hover:via-pink-500 hover:to-red-500 text-white font-bold py-2 px-4 rounded"
             >
               Hire ME
             </NavLink>

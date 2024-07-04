@@ -9,6 +9,7 @@ import { Pagination } from "swiper/modules";
 
 import HomeSkillCard from "../HomeSkillsCard";
 import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
 const SkillsAll = () => {
   const [skills, setSkills] = useState([]);
   useEffect(() => {
@@ -47,9 +48,9 @@ const SkillsAll = () => {
         <div class="flex justify-center items-center lg:py-5 py-3">
           <Link
             to={"/skills"}
-            className="bg-gradient-to-r from-blue-500 via-green-500 to-purple-500 hover:bg-gradient-to-r hover:from-purple-500 hover:via-pink-500 hover:to-red-500 text-white font-bold py-2 px-4 rounded"
+            className="bg-gradient-to-r flex  items-center gap-1 from-blue-500 via-green-500 to-purple-500 hover:bg-gradient-to-r hover:from-purple-500 hover:via-pink-500 hover:to-red-500 text-white font-bold py-2 px-4 rounded"
           >
-             shills Details
+             shills Details  <FaArrowRight></FaArrowRight>
           </Link>
         </div>
       </div>
