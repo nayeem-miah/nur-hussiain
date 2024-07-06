@@ -53,20 +53,20 @@ const Footer = () => {
       <nav>
         <div className="grid grid-flow-col gap-4">
           <Link
-            to={"https://github.com/nayeem-miah/nayeem-miah"}
+            to={"https://github.com/nayeem-miah"}
             target="_blank"
           >
             <FaGithub className="text-4xl"></FaGithub>
           </Link>
 
           <a
-            href="https://linkedin.com/in/https://www.linkedin.com/in/nayeem-islam-734719307"
+            href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGonzb4vjmpzwAAAZCGNetYaTBkmPmP3jwbyu15qSZsZVSa01c5lbIg6a22QjHL8Mf9sDcVq7rvWtCOZsF0One3ecf7WwC9NYgSj07FJv4AXXmn3LI444T7zHLq47D4Huetwe4=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fmd-nayeem-miah-734719307"
             target="blank"
           >
             <FaLinkedin className="text-4xl text-blue-600"></FaLinkedin>
           </a>
           <a
-            href="https://fb.com/https://web.facebook.com/profile.php?id=100042968569904&_rdc=1&_rdr"
+            href="https://www.facebook.com/profile.php?id=100042968569904"
             target="blank"
           >
             <FaFacebook className="text-4xl text-blue-600"></FaFacebook>
