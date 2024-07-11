@@ -20,7 +20,7 @@ const Skills = () => {
       ) : (
         <div>
           <Helmet>
-            <title>my Personal Portfolio | skills Page</title>
+            <title>NAYEEM | skills Page</title>
           </Helmet>
           <h3 className="text-center text-3xl font-semibold my-10 text-black">
             My Skills

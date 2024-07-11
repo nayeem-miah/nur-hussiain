@@ -26,7 +26,7 @@ const Home = () => {
       ) : (
         <div>
           <Helmet>
-            <title>my Personal Portfolio | Home Page</title>
+            <title>NAYEEM | Home Page</title>
           </Helmet>
           <Banner></Banner>
           <div className="my-10">

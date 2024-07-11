@@ -17,7 +17,7 @@ const About = () => {
       ) : (
         <div className="my-10">
           <Helmet>
-            <title>my Personal Portfolio | About Page</title>
+            <title>NAYEEM | About Page</title>
           </Helmet>
           <h3 className="text-center font-bold text-3xl mt-16 mb-5">
             About Me

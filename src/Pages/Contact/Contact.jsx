@@ -32,7 +32,7 @@ const Contact = () => {
       ) : (
         <div className="text-gray-900">
           <Helmet>
-            <title>my Personal Portfolio | contact Page</title>
+            <title>NAYEEM | contact Page</title>
           </Helmet>
           <h3 className="text-3xl font-bold text-center my-5">Contact ME </h3>
           <p className="my-5">

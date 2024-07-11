@@ -19,7 +19,7 @@ const Projects = () => {
       ) : (
         <div>
           <Helmet>
-            <title>my Personal Portfolio | projects Page</title>
+            <title>NAYEEM | projects Page</title>
           </Helmet>
           <h3 className="text-center font-bold text-3xl my-6">My Projects</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7">
