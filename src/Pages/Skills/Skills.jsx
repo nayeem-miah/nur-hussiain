@@ -18,11 +18,11 @@ const Skills = () => {
       {loading ? (
         <Loader></Loader>
       ) : (
-        <div>
+        <div className="lg:mx-0 mx-3">
           <Helmet>
             <title>NAYEEM | skills Page</title>
           </Helmet>
-          <h3 className="text-center text-3xl font-semibold my-10 text-black">
+          <h3 className="text-center text-3xl font-semibold lg:my-10 my-5 text-black">
             My Skills
           </h3>
           <p className=" text-xs lg:text-xl my-9">

@@ -20,7 +20,7 @@ const ContactHome = () => {
     <div className="text-gray-900 bg-[#dfdfda]">
       <h3 className="text-3xl font-bold text-center my-5">Contact Us </h3>
       <p className="my-5"></p>
-      <div className="lg:flex justify-around">
+      <div className="lg:flex justify-around lg:mx-0 mx-3 ">
         <div>
           <p className="lg:text-2xl text-xl font-serif my-5">
             <span className="font-bold">name:</span> MD Nayeem Miah

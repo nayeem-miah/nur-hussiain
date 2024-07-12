@@ -15,11 +15,11 @@ const About = () => {
       {loading ? (
         <Loader></Loader>
       ) : (
-        <div className="my-10">
+        <div className="my-10 lg:mx-0 mx-3">
           <Helmet>
             <title>NAYEEM | About Page</title>
           </Helmet>
-          <h3 className="text-center font-bold text-3xl mt-16 mb-5">
+          <h3 className="text-center font-bold text-3xl lg:mt-16 mt-5 mb-5">
             About Me
           </h3>
           <p className="text-black lg:text-xl text-xs">

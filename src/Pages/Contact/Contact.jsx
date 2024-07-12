@@ -30,7 +30,7 @@ const Contact = () => {
       {loading ? (
         <Loader></Loader>
       ) : (
-        <div className="text-gray-900">
+        <div className="text-gray-900 lg:mx-0 mx-3">
           <Helmet>
             <title>NAYEEM | contact Page</title>
           </Helmet>
@@ -48,13 +48,12 @@ const Contact = () => {
               <div className="font-bold text-xl">
                 <p className="flex items-center   lg:text-xl text-xs">
                   <MdOutlineEmail></MdOutlineEmail>email:{" "}
-                  <a
-                    href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRnZnPXBQlhpDrpZbSqrsmxJlXSQvsKJKlvnPDWNSHcqJtPMwhhZlPnNCsWVPFhPhLNdnLv"
-                    target="_blank"
+                  <p
+                    
                     className="hover:link-hover hover:text-blue-500 "
                   >
                     nayeem5113a@gamil.com
-                  </a>
+                  </p>
                 </p>
                 <p className="flex items-center my-2 lg:text-xl text-xs">
                   <IoCallSharp></IoCallSharp> <span>contact Number:</span>

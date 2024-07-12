@@ -5,7 +5,7 @@ const AboutMe = () => {
   return (
     <div className="my-10">
       <h3 className="text-center font-bold text-3xl mt-16 mb-5">About Me</h3>
-      <p className="text-black lg:text-xl text-xs">
+      <p className="text-black lg:text-xl text-xs lg:mx-0 mx-3">
         I'm Nayeem, a dedicated Junior Frontend Developer driven by a passion
         for creating visually stunning and user-friendly web interfaces. My
         expertise spans HTML, CSS, JavaScript, React.js, Node.js, Express.js,

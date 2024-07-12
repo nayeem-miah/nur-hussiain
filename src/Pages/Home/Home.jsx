@@ -1,9 +1,9 @@
 import AboutMe from "../../Components/AboutMe/AboutMe";
 import HomeProjects from "../../Components/skills/HomeProjects";
 import SkillsAll from "../../Components/skills/skills";
-import Contact from "../Contact/Contact";
+// import Contact from "../Contact/Contact";
 import Banner from "./Banner/Banner";
-import pdf from "../../../src/assets/08096278-85a0-43ca-af1c-a9e8ef9ebd8e.pdf";
+import pdf from "../../../src/assets/frontenddeveloper__.pdf";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { IoCallSharp } from "react-icons/io5";

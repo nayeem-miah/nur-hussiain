@@ -5,7 +5,7 @@ import { IoCallSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import profile from "../../../assets/Profile.png";
 import bannerImg from "../../../assets/Banner.jpg";
-import pdf from "../../../assets/08096278-85a0-43ca-af1c-a9e8ef9ebd8e.pdf";
+import pdf from "../../../assets/frontenddeveloper__.pdf";
 
 const Banner = () => {
   return (
