@@ -15,7 +15,26 @@ const Contact = () => {
     const email = form.email.value;
     const message = form.message.value;
     console.log({ name, email, message });
-    toast.success("Your submission Successfully");
+
+    const newMessage = {
+      name, email, message
+    }
+
+    fetch('https://y-pi-mauve.vercel.app/message',
+      {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(newMessage)
+      })
+      .then(res => res.json())
+      .then(data => {
+        console.log(data);
+        if (data.insertedId) {
+          toast.success("Your message Successfully please wait....");
+        }
+      })
     form.reset();
   };
 
@@ -49,7 +68,7 @@ const Contact = () => {
                 <p className="flex items-center   lg:text-xl text-xs">
                   <MdOutlineEmail></MdOutlineEmail>email:{" "}
                   <p
-                    
+
                     className="hover:link-hover hover:text-blue-500 "
                   >
                     nayeem5113a@gamil.com
@@ -99,6 +118,8 @@ const Contact = () => {
               </div>
             </div>
             <div>
+
+
               <section className="max-w-4xl p-6 mx-auto bg-[#f5f5eb] rounded-md shadow-md">
                 <h2 className="text-2xl font-semibold text-gray-700 capitalize dark:text-black">
                   Let’s Message me !
