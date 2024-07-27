@@ -14,7 +14,7 @@ const Contact = () => {
     const name = form.name.value;
     const email = form.email.value;
     const message = form.message.value;
-    console.log({ name, email, message });
+    // console.log({ name, email, message });
 
     const newMessage = {
       name, email, message
@@ -49,12 +49,12 @@ const Contact = () => {
       {loading ? (
         <Loader></Loader>
       ) : (
-        <div className="text-gray-900 lg:mx-0 mx-3">
+        <div className=" lg:mx-0 mx-3">
           <Helmet>
             <title>NAYEEM | contact Page</title>
           </Helmet>
           <h3 className="text-3xl font-bold text-center my-5">Contact ME </h3>
-          <p className="my-5">
+          <p className="my-5 text-center">
             I'm always open to discussing new projects, creative ideas, or
             opportunities to be part of your vision. Feel free to reach out
             through any of the following methods:
@@ -90,7 +90,7 @@ const Contact = () => {
                   <FaArrowRightLong></FaArrowRightLong>
                 </h4>
                 <nav>
-                  <div className="grid grid-cols-3 ">
+                  <div className="grid grid-cols-3 my-4">
                     <Link
                       to={"https://github.com/nayeem-miah"}
                       target="_blank"
@@ -130,7 +130,7 @@ const Contact = () => {
                     <div>
                       <label
                         className="text-gray-700 dark:text-gray-700"
-                        for="username"
+                        htmlFor="username"
                       >
                         Your Name{" "}
                       </label>
@@ -146,7 +146,7 @@ const Contact = () => {
                     <div>
                       <label
                         className="text-gray-700 dark:text-gray-700"
-                        for="emailAddress"
+                        htmlFor="emailAddress"
                       >
                         Email Address
                       </label>

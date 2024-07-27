@@ -13,11 +13,29 @@ const ContactHome = () => {
     const email = form.email.value;
     const message = form.message.value;
     console.log({ name, email, message });
-    toast.success("Your submission Successfully");
+    const newMessage = {
+      name, email, message
+    }
+
+    fetch('http://localhost:5000/message',
+      {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(newMessage)
+      })
+      .then(res => res.json())
+      .then(data => {
+        console.log(data);
+        if (data.insertedId) {
+          toast.success("Your message Successfully please wait....");
+        }
+      })
     form.reset();
   };
   return (
-    <div className="text-gray-900 bg-[#dfdfda]">
+    <div className=" ">
       <h3 className="text-3xl font-bold text-center my-5">Contact Us </h3>
       <p className="my-5"></p>
       <div className="lg:flex justify-around lg:mx-0 mx-3 ">
@@ -52,7 +70,7 @@ const ContactHome = () => {
               <FaArrowRightLong></FaArrowRightLong>
             </h4>
             <nav>
-              <div className="grid grid-cols-3 ">
+              <div className="grid grid-cols-3 my-4">
                 <Link
                   to={"https://github.com/nayeem-miah"}
                   target="_blank"
@@ -79,7 +97,7 @@ const ContactHome = () => {
             </nav>
           </div>
         </div>
-        <div>
+        <div className="py-5">
           <section className="max-w-4xl p-6 mx-auto bg-[#f5f5eb] rounded-md shadow-md">
             <h2 className="text-2xl font-semibold text-gray-700 capitalize dark:text-black">
               Let’s Message me !
@@ -90,7 +108,7 @@ const ContactHome = () => {
                 <div>
                   <label
                     className="text-gray-700 dark:text-gray-700"
-                    for="username"
+                    htmlFor="username"
                   >
                     Your Name{" "}
                   </label>
@@ -106,7 +124,7 @@ const ContactHome = () => {
                 <div>
                   <label
                     className="text-gray-700 dark:text-gray-700"
-                    for="emailAddress"
+                    htmlFor="emailAddress"
                   >
                     Email Address
                   </label>

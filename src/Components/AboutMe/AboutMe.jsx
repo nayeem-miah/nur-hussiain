@@ -5,7 +5,7 @@ const AboutMe = () => {
   return (
     <div className="my-10">
       <h3 className="text-center font-bold text-3xl mt-16 mb-5">About Me</h3>
-      <p className="text-black lg:text-xl text-xs lg:mx-0 mx-3">
+      <p className=" lg:text-xl text-xs lg:mx-0 mx-3">
         I'm Nayeem, a dedicated Junior Frontend Developer driven by a passion
         for creating visually stunning and user-friendly web interfaces. My
         expertise spans HTML, CSS, JavaScript, React.js, Node.js, Express.js,
@@ -14,10 +14,10 @@ const AboutMe = () => {
         seamless and engaging user experiences.
       </p>
       <div>
-        <div class="flex justify-center items-center py-5">
+        <div className="flex justify-center items-center py-5">
           <Link
             to={"/about"}
-            className="bg-gradient-to-r flex  items-center gap-1 from-blue-500 via-green-500 to-purple-500 hover:bg-gradient-to-r hover:from-purple-500 hover:via-pink-500 hover:to-red-500 text-white font-bold py-2 px-4 rounded"
+            className="bg-gradient-to-r flex  items-center gap-1 from-purple-500 via-pink-500 to-red-500 text-white font-bold py-2 px-4 rounded"
           >
             about more  <FaArrowRight></FaArrowRight>
           </Link>

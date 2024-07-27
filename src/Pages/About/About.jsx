@@ -22,7 +22,7 @@ const About = () => {
           <h3 className="text-center font-bold text-3xl lg:mt-16 mt-5 mb-5">
             About Me
           </h3>
-          <p className="text-black lg:text-xl text-xs">
+          <p className=" lg:text-xl text-xs">
             I'm Nayeem,I am a Frontend Developer.I'm a dedicated Junior Frontend
             Developer driven by a passion for creating visually stunning and
             user-friendly web interfaces. My expertise spans HTML, CSS,
@@ -53,9 +53,9 @@ const About = () => {
             from Moulvibazar Polytechnic Institute. I gave SSC Exam in 2021.
           </p>
           <div>
-            <div class="flex justify-center items-center py-5"></div>
+            <div className="flex justify-center items-center py-5"></div>
 
-            <div className=" lg:flex md:flex justify-between text-gray-900 ">
+            <div className=" lg:flex md:flex justify-between ">
               <div className="">
                 <h4 className="font-bold">Name:</h4>
                 <p className="">Nayeem miah </p>
@@ -73,16 +73,16 @@ const About = () => {
                 <p className=""> Mymensingh, Bangladesh</p>
               </div>
             </div>
-            <div class="flex justify-center items-center py-5 gap-3 my-10">
+            <div className="flex justify-center items-center py-5 gap-3 my-10">
               <Link
                 to={"/skills"}
-                className="bg-gradient-to-r from-blue-500 via-green-500 to-purple-500 hover:bg-gradient-to-r hover:from-purple-500 hover:via-pink-500 hover:to-red-500 text-white font-bold py-2 px-4 rounded text-xl"
+                className="bg-gradient-to-r flex  items-center gap-1 from-purple-500 via-pink-500 to-red-500 text-white font-bold py-2 px-4 rounded "
               >
                 --skills--
               </Link>
               <Link
                 to={"/projects"}
-                className="bg-gradient-to-r from-blue-500 via-green-500 to-purple-500 hover:bg-gradient-to-r hover:from-purple-500 hover:via-pink-500 hover:to-red-500 text-white font-bold py-2 px-4 rounded text-xl"
+                className="bg-gradient-to-r flex  items-center gap-1 from-purple-500 via-pink-500 to-red-500 text-white font-bold py-2 px-4 rounded "
               >
                 --projects--
               </Link>

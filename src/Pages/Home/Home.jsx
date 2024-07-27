@@ -1,9 +1,9 @@
 import AboutMe from "../../Components/AboutMe/AboutMe";
 import HomeProjects from "../../Components/skills/HomeProjects";
 import SkillsAll from "../../Components/skills/skills";
-// import Contact from "../Contact/Contact";
+
 import Banner from "./Banner/Banner";
-import pdf from "../../../src/assets/frontenddeveloper__.pdf";
+import pdf from "../../../src/assets/resume (2).pdf";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { IoCallSharp } from "react-icons/io5";
@@ -37,14 +37,14 @@ const Home = () => {
             <div className="flex gap-2 items-center justify-center my-8 ">
               <a
                 href={pdf}
-                className="bg-gradient-to-r from-blue-500 via-green-500 to-purple-500 hover:bg-gradient-to-r hover:from-purple-500 hover:via-pink-500 hover:to-red-500 text-white font-bold py-2 px-4 rounded flex  items-center gap-1"
+                className="bg-gradient-to-r flex  items-center gap-1 from-purple-500 via-pink-500 to-red-500 text-white font-bold py-2 px-4 rounded "
                 download={"resume"}
               >
-                <FaCloudDownloadAlt></FaCloudDownloadAlt> Download CV
+                <FaCloudDownloadAlt></FaCloudDownloadAlt> Download resume
               </a>
               <Link
                 to={"/contact"}
-                className="bg-gradient-to-r from-blue-500 via-green-500 to-purple-500 hover:bg-gradient-to-r hover:from-purple-500 hover:via-pink-500 hover:to-red-500 text-white font-bold py-2 px-4 rounded flex  items-center gap-1"
+                className="bg-gradient-to-r flex  items-center gap-1 from-purple-500 via-pink-500 to-red-500 text-white font-bold py-2 px-4 rounded "
               >
                 <IoCallSharp></IoCallSharp> contact
               </Link>

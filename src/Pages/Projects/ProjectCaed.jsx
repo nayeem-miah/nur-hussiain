@@ -13,12 +13,12 @@ const ProjectCard = ({ project }) => {
   return (
     <div >
       <div
-        className="card bg-base-100 h-full w-full shadow-xl"
+        className="card bg-base-300 h-full w-full shadow-xl"
         data-aos="fade-up"
-        data-aos-duration="2000"
+        data-aos-duration="3000"
       >
         <figure>
-          <img src={project.img} alt="Shoes" />
+          <img src={project.img}  />
         </figure>
         <div className="card-body">
           <h2 className="card-title text-2xl lg:text-3xl">{project.title}</h2>

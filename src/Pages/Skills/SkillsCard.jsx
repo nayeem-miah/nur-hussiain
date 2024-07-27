@@ -8,7 +8,7 @@ const SkillsCard = ({ skill }) => {
   //   console.log(skill);
   return (
     <div data-aos="fade-up" data-aos-duration="2000">
-      <div className="card bg-base-100  shadow-xl h-96">
+      <div className="card bg-base-300  shadow-xl h-96">
         <figure className="px-10 pt-10">
           <img src={skill.img} alt="skill" className="rounded-xl h-28" />
         </figure>

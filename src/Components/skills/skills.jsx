@@ -46,10 +46,10 @@ const SkillsAll = () => {
             ))}
           </div>
         </Swiper>
-        <div class="flex justify-center items-center lg:py-5 py-3">
+        <div className="flex justify-center items-center lg:py-5 py-3">
           <Link
             to={"/skills"}
-            className="bg-gradient-to-r flex  items-center gap-1 from-blue-500 via-green-500 to-purple-500 hover:bg-gradient-to-r hover:from-purple-500 hover:via-pink-500 hover:to-red-500 text-white font-bold py-2 px-4 rounded"
+            className="bg-gradient-to-r flex  items-center gap-1 from-purple-500 via-pink-500 to-red-500 text-white font-bold py-2 px-4 rounded"
           >
              skills Details  <FaArrowRight></FaArrowRight>
           </Link>

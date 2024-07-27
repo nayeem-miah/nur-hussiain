@@ -5,7 +5,7 @@ import { IoCallSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import profile from "../../../assets/Profile.png";
 import bannerImg from "../../../assets/Banner.jpg";
-import pdf from "../../../assets/frontenddeveloper__.pdf";
+import pdf from "../../../assets/resume (2).pdf";
 
 const Banner = () => {
   return (
@@ -30,7 +30,7 @@ const Banner = () => {
               delaySpeed={1000}
             />
           </h1>
-          <h1 className="mb-5 md:text-2xl text-xl lg:text-3xl font-bold text-orange-600 opacity-60 ">
+          <h1 className="mb-5 md:text-2xl text-xl lg:text-3xl font-bold text-purple-600">
             {" "}
             <Typewriter
               words={[
@@ -57,7 +57,7 @@ const Banner = () => {
               className="btn btn-secondary flex items-center   hover:bg-purple-700"
               download={"resume"}
             >
-              <FaCloudDownloadAlt></FaCloudDownloadAlt> Download CV
+              <FaCloudDownloadAlt></FaCloudDownloadAlt> Download resume
             </a>
             <Link
               to={"/contact"}
