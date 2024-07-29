@@ -7,35 +7,27 @@ import toast from "react-hot-toast";
 import { Helmet } from "react-helmet-async";
 import { useEffect, useState } from "react";
 import Loader from "../../Components/Loader";
+import emailjs from '@emailjs/browser';
 const Contact = () => {
-  const handleSubmit = e => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    const form = e.target;
-    const name = form.name.value;
-    const email = form.email.value;
-    const message = form.message.value;
-    // console.log({ name, email, message });
+    // console.log(e);
+    toast.success("Your email success.please wait...")
+    emailjs
+      .sendForm('gmail', 'template_u7n49p5', e.target, {
+        publicKey: "NnJvAfFBi7ykEwKk9",
+      })
+      .then(
+        () => {
 
-    const newMessage = {
-      name, email, message
-    }
-
-    fetch('https://y-pi-mauve.vercel.app/message',
-      {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
+          console.log("successfully ")
         },
-        body: JSON.stringify(newMessage)
-      })
-      .then(res => res.json())
-      .then(data => {
-        console.log(data);
-        if (data.insertedId) {
-          toast.success("Your message Successfully please wait....");
-        }
-      })
-    form.reset();
+        (error) => {
+          toast.error('FAILED...', error.text);
+          console.log('FAILED...', error.text);
+        },
+      );
+    e.target.reset();
   };
 
   const [loading, setLoading] = useState(true);
@@ -118,14 +110,14 @@ const Contact = () => {
               </div>
             </div>
             <div>
-
-
               <section className="max-w-4xl p-6 mx-auto bg-[#f5f5eb] rounded-md shadow-md">
                 <h2 className="text-2xl font-semibold text-gray-700 capitalize dark:text-black">
                   Let’s Message me !
                 </h2>
 
-                <form onSubmit={handleSubmit}>
+                <form
+
+                  onSubmit={sendEmail}>
                   <div className="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
                     <div>
                       <label
@@ -178,6 +170,12 @@ const Contact = () => {
                   </div>
                 </form>
               </section>
+
+
+
+
+
+
             </div>
           </div>
         </div>

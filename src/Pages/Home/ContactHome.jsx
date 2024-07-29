@@ -4,36 +4,30 @@ import { FaFacebookF, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { FaArrowLeft, FaArrowRightLong } from "react-icons/fa6";
 import toast from "react-hot-toast";
-
+import emailjs from '@emailjs/browser';
 const ContactHome = () => {
-  const handleSubmit = e => {
-    e.preventDefault();
-    const form = e.target;
-    const name = form.name.value;
-    const email = form.email.value;
-    const message = form.message.value;
-    console.log({ name, email, message });
-    const newMessage = {
-      name, email, message
-    }
 
-    fetch('http://localhost:5000/message',
-      {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
+  const sendEmail = (e) => {
+    e.preventDefault();
+    // console.log(e);
+    toast.success("Your email success.please wait...")
+    emailjs
+      .sendForm('gmail', 'template_u7n49p5', e.target, {
+        publicKey: "NnJvAfFBi7ykEwKk9",
+      })
+      .then(
+        () => {
+
+          console.log("Message successfully")
         },
-        body: JSON.stringify(newMessage)
-      })
-      .then(res => res.json())
-      .then(data => {
-        console.log(data);
-        if (data.insertedId) {
-          toast.success("Your message Successfully please wait....");
-        }
-      })
-    form.reset();
+        (error) => {
+          toast.error('FAILED...', error.text);
+          console.log('FAILED...', error.text);
+        },
+      );
+    e.target.reset();
   };
+
   return (
     <div className=" ">
       <h3 className="text-3xl font-bold text-center my-5">Contact Us </h3>
@@ -103,58 +97,66 @@ const ContactHome = () => {
               Let’s Message me !
             </h2>
 
-            <form onSubmit={handleSubmit}>
-              <div className="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
-                <div>
-                  <label
-                    className="text-gray-700 dark:text-gray-700"
-                    htmlFor="username"
-                  >
-                    Your Name{" "}
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Your Name"
-                    required
-                    name="name"
-                    className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
-                  />
-                </div>
+            <section className="max-w-4xl p-6 mx-auto bg-[#f5f5eb] rounded-md shadow-md">
+              <h2 className="text-2xl font-semibold text-gray-700 capitalize dark:text-black">
+                Let’s Message me !
+              </h2>
 
-                <div>
-                  <label
-                    className="text-gray-700 dark:text-gray-700"
-                    htmlFor="emailAddress"
-                  >
-                    Email Address
-                  </label>
-                  <input
-                    id="emailAddress"
-                    type="email"
-                    name="email"
-                    placeholder="your email"
-                    required
-                    className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
-                  />
+              <form
+
+                onSubmit={sendEmail}>
+                <div className="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
+                  <div>
+                    <label
+                      className="text-gray-700 dark:text-gray-700"
+                      htmlFor="username"
+                    >
+                      Your Name{" "}
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="Your Name"
+                      required
+                      name="name"
+                      className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      className="text-gray-700 dark:text-gray-700"
+                      htmlFor="emailAddress"
+                    >
+                      Email Address
+                    </label>
+                    <input
+                      id="emailAddress"
+                      type="email"
+                      name="email"
+                      placeholder="your email"
+                      required
+                      className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div>
-                <label className="text-gray-700 dark:text-gray-700">
-                  Message
-                </label>
-                <textarea
-                  className="textarea textarea-info block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
-                  placeholder="Message"
-                  name="message"
-                  required
-                ></textarea>
-              </div>
-              <div className="flex justify-end mt-6">
-                <button className="px-8 py-2.5 leading-5 text-white w-full transition-colors duration-300 transform bg-gray-700 rounded-md  focus:outline-none focus:bg-gray-600 hover:bg-gray-950">
-                  Submit
-                </button>
-              </div>
-            </form>
+                <div>
+                  <label className="text-gray-700 dark:text-gray-700">
+                    Message
+                  </label>
+                  <textarea
+                    className="textarea textarea-info block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                    placeholder="Message"
+                    name="message"
+                    required
+                  ></textarea>
+                </div>
+                <div className="flex justify-end mt-6">
+                  <button className="px-8 py-2.5 leading-5 text-white w-full transition-colors duration-300 transform bg-gray-700 rounded-md  focus:outline-none focus:bg-gray-600 hover:bg-gray-950">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </section>
           </section>
         </div>
       </div>
