@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import profile from "../../../assets/Profile.png";
 import bannerImg from "../../../assets/Banner.jpg";
 import pdf from "../../../assets/resume (2).pdf";
+import { RiReactjsFill } from "react-icons/ri";
 
 const Banner = () => {
   return (
@@ -18,6 +19,8 @@ const Banner = () => {
       <div className="hero-overlay bg-opacity-60"></div>
       <div className=" text-neutral-content text-center lg:flex items-center justify-between">
         <div className="max-w-md">
+
+
           <h1 className="mb-5 md:text-4xl text-2xl lg:text-5xl font-bold text-purple-600">
             {" "}
             <Typewriter
@@ -66,8 +69,10 @@ const Banner = () => {
               <IoCallSharp></IoCallSharp> Contact
             </Link>
           </div>
+
         </div>
-        <div className="">
+
+        <div className=" flex">
           <img
             src={profile}
             alt=""
@@ -75,6 +80,7 @@ const Banner = () => {
           />
         </div>
       </div>
+          <p className="absolute items-end lg:block hidden" ><RiReactjsFill className="w-20 h-20  animate-spin text-[#58C4DC]" /></p>
     </div>
   );
 };
