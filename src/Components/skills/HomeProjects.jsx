@@ -15,7 +15,6 @@ const HomeProjects = () => {
       });
   }, []);
   const pri = project.slice(0, 2);
-  //   console.log(pri.length);
   return (
     <div className=" py-11">
       <h3 className="text-3xl text-center font-bold"> My Projects </h3>

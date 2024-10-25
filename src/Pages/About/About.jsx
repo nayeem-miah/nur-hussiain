@@ -23,7 +23,7 @@ const About = () => {
             About Me
           </h3>
           <p className=" lg:text-xl text-xs">
-            I'm Nayeem,I am a Frontend Developer.I'm a dedicated Junior Frontend
+            I'm Nayeem,I am a Frontend Developer.I'm a dedicated  Frontend
             Developer driven by a passion for creating visually stunning and
             user-friendly web interfaces. My expertise spans HTML, CSS,
             JavaScript, React.js, Node.js, Express.js, Firebase, MongoDB, and

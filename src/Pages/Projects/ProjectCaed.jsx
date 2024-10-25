@@ -9,7 +9,7 @@ const ProjectCard = ({ project }) => {
     Aos.init();
   }, []);
   //   console.log(project);
-  
+
   return (
     <div >
       <div
@@ -18,7 +18,7 @@ const ProjectCard = ({ project }) => {
         data-aos-duration="3000"
       >
         <figure>
-          <img src={project.img}  />
+          <img className="hover:scale-105" src={project.img}  />
         </figure>
         <div className="card-body">
           <h2 className="card-title text-2xl lg:text-3xl">{project.title}</h2>

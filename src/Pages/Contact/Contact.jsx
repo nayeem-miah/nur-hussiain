@@ -9,7 +9,9 @@ import { useEffect, useState } from "react";
 import Loader from "../../Components/Loader";
 import emailjs from '@emailjs/browser';
 const Contact = () => {
+  const [isLoading, setIsLoading] = useState(false)
   const sendEmail = (e) => {
+    setIsLoading(true)
     e.preventDefault();
     // console.log(e);
     toast.success("Your email success.please wait...")
@@ -20,7 +22,8 @@ const Contact = () => {
       .then(
         () => {
 
-          console.log("successfully ")
+          // console.log("successfully ")
+          setIsLoading(false)
         },
         (error) => {
           toast.error('FAILED...', error.text);
@@ -110,8 +113,8 @@ const Contact = () => {
               </div>
             </div>
             <div>
-              <section className="max-w-4xl p-6 mx-auto bg-[#f5f5eb] rounded-md shadow-md">
-                <h2 className="text-2xl font-semibold text-gray-700 capitalize dark:text-black">
+              <section className="max-w-4xl p-6 mx-auto  rounded-md shadow-md">
+                <h2 className="text-2xl font-semibold dark:text- capitalize ">
                   Let’s Message me !
                 </h2>
 
@@ -121,7 +124,7 @@ const Contact = () => {
                   <div className="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
                     <div>
                       <label
-                        className="text-gray-700 dark:text-gray-700"
+                        className=""
                         htmlFor="username"
                       >
                         Your Name{" "}
@@ -137,7 +140,7 @@ const Contact = () => {
 
                     <div>
                       <label
-                        className="text-gray-700 dark:text-gray-700"
+
                         htmlFor="emailAddress"
                       >
                         Email Address
@@ -153,7 +156,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div>
-                    <label className="text-gray-700 dark:text-gray-700">
+                    <label>
                       Message
                     </label>
                     <textarea
@@ -164,18 +167,14 @@ const Contact = () => {
                     ></textarea>
                   </div>
                   <div className="flex justify-end mt-6">
-                    <button className="px-8 py-2.5 leading-5 text-white w-full transition-colors duration-300 transform bg-gray-700 rounded-md  focus:outline-none focus:bg-gray-600 hover:bg-gray-950">
-                      Submit
+                    <button disabled={isLoading} className="px-8 py-2.5 leading-5 text-white w-full transition-colors duration-300 transform bg-gray-700 rounded-md  focus:outline-none focus:bg-gray-600 hover:bg-gray-950">
+                     {
+                      isLoading ? "process...": 'Submit'
+                     }
                     </button>
                   </div>
                 </form>
               </section>
-
-
-
-
-
-
             </div>
           </div>
         </div>

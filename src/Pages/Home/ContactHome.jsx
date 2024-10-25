@@ -5,9 +5,12 @@ import { Link } from "react-router-dom";
 import { FaArrowLeft, FaArrowRightLong } from "react-icons/fa6";
 import toast from "react-hot-toast";
 import emailjs from '@emailjs/browser';
+import { useState } from "react";
 const ContactHome = () => {
 
+  const [isLoading, setIsLoading] = useState(false)
   const sendEmail = (e) => {
+    setIsLoading(true)
     e.preventDefault();
     // console.log(e);
     toast.success("Your email success.please wait...")
@@ -17,8 +20,8 @@ const ContactHome = () => {
       })
       .then(
         () => {
-
-          console.log("Message successfully")
+          setIsLoading(false)
+          // console.log("Message successfully")
         },
         (error) => {
           toast.error('FAILED...', error.text);
@@ -92,13 +95,13 @@ const ContactHome = () => {
           </div>
         </div>
         <div className="py-5">
-          <section className="max-w-4xl p-6 mx-auto bg-[#f5f5eb] rounded-md shadow-md">
-            <h2 className="text-2xl font-semibold text-gray-700 capitalize dark:text-black">
-              Let’s Message me !
+          <section className="max-w-4xl p-6 mx-auto  rounded-md shadow-md">
+            <h2 className="text-2xl font-semibold  capitalize ">
+
             </h2>
 
-            <section className="max-w-4xl p-6 mx-auto bg-[#f5f5eb] rounded-md shadow-md">
-              <h2 className="text-2xl font-semibold text-gray-700 capitalize dark:text-black">
+            <section className="max-w-4xl p-6 mx-auto  rounded-md shadow-md">
+              <h2 className="text-2xl font-semibold capitalize ">
                 Let’s Message me !
               </h2>
 
@@ -108,7 +111,7 @@ const ContactHome = () => {
                 <div className="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
                   <div>
                     <label
-                      className="text-gray-700 dark:text-gray-700"
+
                       htmlFor="username"
                     >
                       Your Name{" "}
@@ -124,7 +127,6 @@ const ContactHome = () => {
 
                   <div>
                     <label
-                      className="text-gray-700 dark:text-gray-700"
                       htmlFor="emailAddress"
                     >
                       Email Address
@@ -140,7 +142,7 @@ const ContactHome = () => {
                   </div>
                 </div>
                 <div>
-                  <label className="text-gray-700 dark:text-gray-700">
+                  <label>
                     Message
                   </label>
                   <textarea
@@ -152,7 +154,9 @@ const ContactHome = () => {
                 </div>
                 <div className="flex justify-end mt-6">
                   <button className="px-8 py-2.5 leading-5 text-white w-full transition-colors duration-300 transform bg-gray-700 rounded-md  focus:outline-none focus:bg-gray-600 hover:bg-gray-950">
-                    Submit
+                    {
+                      isLoading ? "process..." : 'Submit'
+                    }
                   </button>
                 </div>
               </form>
