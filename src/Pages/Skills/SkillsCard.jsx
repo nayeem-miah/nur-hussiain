@@ -14,9 +14,7 @@ const SkillsCard = ({ skill }) => {
         </figure>
         <div className="card-body  ">
           <h2 className="card-title">{skill.name}</h2>
-          <p>
-            <span className="font-bold">experience:</span> {skill.experience}
-          </p>
+
           <p>
             <span className="font-bold">description:</span>
             {skill.description}
