@@ -3,7 +3,7 @@ import HomeProjects from "../../Components/skills/HomeProjects";
 import SkillsAll from "../../Components/skills/skills";
 
 import Banner from "./Banner/Banner";
-import pdf from "../../../src/assets/resume (2).pdf";
+import pdf from "../../../src/assets/django-mlcv.pdf";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { IoCallSharp } from "react-icons/io5";
@@ -26,7 +26,7 @@ const Home = () => {
       ) : (
         <div>
           <Helmet>
-            <title>NAYEEM | Home Page</title>
+            <title>NUR HOSSEN | Home Page</title>
           </Helmet>
           <Banner></Banner>
           <div className="my-10">

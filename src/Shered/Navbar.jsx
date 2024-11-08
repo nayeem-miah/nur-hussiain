@@ -8,7 +8,7 @@ const Navbar = () => {
         <NavLink
           to="/"
           className={({ isActive }) =>
-            isActive ? "text-purple-500 font-bold" : "font-bold"
+            isActive ? "text-[#EA580C] font-bold" : "font-bold"
           }
         >
           Home
@@ -19,7 +19,7 @@ const Navbar = () => {
         <NavLink
           to="/about"
           className={({ isActive }) =>
-            isActive ? "text-purple-500 font-bold" : "font-bold"
+            isActive ? "text-[#EA580C] font-bold" : "font-bold"
           }
         >
           About
@@ -30,7 +30,7 @@ const Navbar = () => {
         <NavLink
           to="/skills"
           className={({ isActive }) =>
-            isActive ? "text-purple-500 font-bold" : "font-bold"
+            isActive ? "text-[#EA580C] font-bold" : "font-bold"
           }
         >
           Skills
@@ -40,7 +40,7 @@ const Navbar = () => {
         <NavLink
           to="/projects"
           className={({ isActive }) =>
-            isActive ? "text-purple-500 font-bold" : "font-bold"
+            isActive ? "text-[#EA580C] font-bold" : "font-bold"
           }
         >
           Projects
@@ -82,7 +82,7 @@ const Navbar = () => {
             className=" font-bold
 "
           >
-            MUHAMMED <span className="text-orange-600 font-bold">NUR</span>
+            NUR  <span className="text-orange-600 font-bold">HOSSEN</span>
           </span>
         </Link>
       </div>
@@ -95,7 +95,7 @@ const Navbar = () => {
           <div className="  ">
             <NavLink
               to={"/contact"}
-              className="bg-gradient-to-r flex  items-center gap-1 from-purple-500 via-pink-500 to-red-500 text-white font-bold py-2 px-4 rounded "
+              className=" text-black bg-[#EA580C] flex items-center   hover:bg-[#bf4503] font-bold py-2 px-4 rounded "
             >
             contact
             </NavLink>
