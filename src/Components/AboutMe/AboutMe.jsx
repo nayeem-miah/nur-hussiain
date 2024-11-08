@@ -6,18 +6,13 @@ const AboutMe = () => {
     <div className="my-10">
       <h3 className="text-center font-bold text-3xl mt-16 mb-5">About Me</h3>
       <p className=" lg:text-xl text-xs lg:mx-0 mx-3">
-        I'm Nayeem, a dedicated Junior Frontend Developer driven by a passion
-        for creating visually stunning and user-friendly web interfaces. My
-        expertise spans HTML, CSS, JavaScript, React.js, Node.js, Express.js,
-        Firebase, MongoDB, and Tailwind CSS. With a strong focus on design and
-        an ongoing commitment to enhancing my skills, I strive to deliver
-        seamless and engaging user experiences.
+      Hello, I'm Nur Housin, a dedicated Backend Developer specializing in Python and Django, with foundational knowledge in HTML, CSS, and JavaScript. I am currently studying Diploma Engineering in Computer Science and Technology at Moulvibazar Polytechnic Institute, after completing my SSC exams in 2021. My skill set includes PostgreSQL and basic machine learning, which I’m actively developing alongside my core backend expertise. I'm focused on building efficient, secure, and scalable applications while continuously expanding my knowledge in both backend and full-stack technologies
       </p>
       <div>
         <div className="flex justify-center items-center py-5">
           <Link
             to={"/about"}
-            className="bg-gradient-to-r flex  items-center gap-1 from-purple-500 via-pink-500 to-red-500 text-white font-bold py-2 px-4 rounded"
+            className="text-black bg-[#EA580C] flex items-center   hover:bg-[#bf4503] font-bold py-2 px-4 rounded"
           >
             about more  <FaArrowRight></FaArrowRight>
           </Link>

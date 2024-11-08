@@ -6,7 +6,7 @@ import { FaInstagram } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center bg-black text-xs rounded p-10">
+    <footer className="footer footer-center bg-base-100 text-xs rounded p-10">
       <nav className="grid grid-flow-col gap-4">
         <NavLink
           to={"/"}

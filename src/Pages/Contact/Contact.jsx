@@ -6,7 +6,6 @@ import { MdOutlineAttachEmail } from "react-icons/md";
 import { ImLocation2 } from "react-icons/im";
 
 
-
 const Contact = () => {
     return (
         <div className="py-20">

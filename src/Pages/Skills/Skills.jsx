@@ -20,7 +20,7 @@ const Skills = () => {
       ) : (
         <div className="lg:mx-0 mx-3">
           <Helmet>
-            <title>NAYEEM | skills Page</title>
+            <title>NUR HOSSEN | skills Page</title>
           </Helmet>
           <h3 className="text-center text-3xl font-semibold lg:my-10 my-5 ">
             My Skills
