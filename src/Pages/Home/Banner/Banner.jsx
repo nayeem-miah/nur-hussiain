@@ -45,9 +45,7 @@ const Banner = () => {
           </h1>
 
           <p className="mb-5 font-bold lg:text-xl text-xs">
-            I craft beautiful and responsive web interfaces.I build scalable and
-            efficient web applications using MongoDB, Express, React, and
-            Node.js
+          Experienced Python Django Developer Specializing in Backend Development, API Integrations, and Database Management
           </p>
           <div className="flex gap-2 items-center ">
             <a
