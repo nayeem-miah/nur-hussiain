@@ -1,186 +1,75 @@
-import { MdOutlineEmail } from "react-icons/md";
-import { IoCallSharp } from "react-icons/io5";
-import { FaFacebookF, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import { FaArrowLeft, FaArrowRightLong } from "react-icons/fa6";
-import toast from "react-hot-toast";
-import { Helmet } from "react-helmet-async";
-import { useEffect, useState } from "react";
-import Loader from "../../Components/Loader";
-import emailjs from '@emailjs/browser';
+
+import contact from './bg.jpg'
+import ContactForm from "./ContactForm";
+import { FaPhone } from "react-icons/fa";
+import { MdOutlineAttachEmail } from "react-icons/md";
+import { ImLocation2 } from "react-icons/im";
+
+
+
 const Contact = () => {
-  const [isLoading, setIsLoading] = useState(false)
-  const sendEmail = (e) => {
-    setIsLoading(true)
-    e.preventDefault();
-    // console.log(e);
-    toast.success("Your email success.please wait...")
-    emailjs
-      .sendForm('gmail', 'template_u7n49p5', e.target, {
-        publicKey: "NnJvAfFBi7ykEwKk9",
-      })
-      .then(
-        () => {
+    return (
+        <div className="py-20">
 
-          // console.log("successfully ")
-          setIsLoading(false)
-        },
-        (error) => {
-          toast.error('FAILED...', error.text);
-          console.log('FAILED...', error.text);
-        },
-      );
-    e.target.reset();
-  };
-
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 1000);
-  }, []);
-  return (
-    <div>
-      {loading ? (
-        <Loader></Loader>
-      ) : (
-        <div className=" lg:mx-0 mx-3">
-          <Helmet>
-            <title>NAYEEM | contact Page</title>
-          </Helmet>
-          <h3 className="text-3xl font-bold text-center my-5">Contact ME </h3>
-          <p className="my-5 text-center">
-            I'm always open to discussing new projects, creative ideas, or
-            opportunities to be part of your vision. Feel free to reach out
-            through any of the following methods:
-          </p>
-          <div className="lg:flex justify-around">
-            <div>
-              <p className="lg:text-2xl text-xl font-serif my-5">
-                <span className="font-bold">name:</span> MD Nayeem Miah
-              </p>
-              <div className="font-bold text-xl">
-                <p className="flex items-center   lg:text-xl text-xs">
-                  <MdOutlineEmail></MdOutlineEmail>email:{" "}
-                  <p
-
-                    className="hover:link-hover hover:text-blue-500 "
-                  >
-                    nayeem5113a@gamil.com
-                  </p>
-                </p>
-                <p className="flex items-center my-2 lg:text-xl text-xs">
-                  <IoCallSharp></IoCallSharp> <span>contact Number:</span>
-                  +8801849317388
-                </p>
-                <p className="flex items-center my-2 lg:text-xl text-xs">
-                  <FaWhatsapp></FaWhatsapp> <span>Whatsapp Number:</span>
-                  +8801849317388
-                </p>
-              </div>
-              <div>
-                <h4 className=" flex items-center lg:text-xl text-xs">
-                  <FaArrowLeft></FaArrowLeft>
-                  Let's connect on social networks
-                  <FaArrowRightLong></FaArrowRightLong>
-                </h4>
-                <nav>
-                  <div className="grid grid-cols-3 my-4">
-                    <Link
-                      to={"https://github.com/nayeem-miah"}
-                      target="_blank"
-                    >
-                      <FaGithub className="text-4xl"></FaGithub>
-                      Github
-                    </Link>
-
-                    <a
-                      href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGonzb4vjmpzwAAAZCGNetYaTBkmPmP3jwbyu15qSZsZVSa01c5lbIg6a22QjHL8Mf9sDcVq7rvWtCOZsF0One3ecf7WwC9NYgSj07FJv4AXXmn3LI444T7zHLq47D4Huetwe4=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fmd-nayeem-miah-734719307"
-                      target="blank"
-                    >
-                      <FaLinkedin className="text-4xl text-blue-600"></FaLinkedin>
-                      linkedin
-                    </a>
-                    <a
-                      href="https://www.facebook.com/profile.php?id=100042968569904"
-                      target="blank"
-                    >
-                      <FaFacebookF className="text-4xl text-blue-600"></FaFacebookF>
-                      facebook
-                    </a>
-                  </div>
-                </nav>
-              </div>
-            </div>
-            <div>
-              <section className="max-w-4xl p-6 mx-auto  rounded-md shadow-md">
-                <h2 className="text-2xl font-semibold dark:text- capitalize ">
-                  Let’s Message me !
-                </h2>
-
-                <form
-
-                  onSubmit={sendEmail}>
-                  <div className="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
-                    <div>
-                      <label
-                        className=""
-                        htmlFor="username"
-                      >
-                        Your Name{" "}
-                      </label>
-                      <input
-                        type="text"
-                        placeholder="Your Name"
-                        required
-                        name="name"
-                        className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
-                      />
+            <div
+                className="w-full bg-center bg-cover h-[400px] md:h-[500px]"
+                style={{
+                    backgroundImage:
+                        `url(${contact})`,
+                }}
+            >
+                <div className="flex items-center justify-center w-full h-full bg-gray-900/40">
+                    <div className="text-center">
+                        <h1 className="text-3xl font-semibold text-white lg:text-4xl">
+                            Build your new <span className="text-blue-400">SaaS</span> Project
+                        </h1>
+                        <button className="w-full px-5 py-2 mt-4 text-sm font-medium text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
+                            Start project
+                        </button>
                     </div>
-
-                    <div>
-                      <label
-
-                        htmlFor="emailAddress"
-                      >
-                        Email Address
-                      </label>
-                      <input
-                        id="emailAddress"
-                        type="email"
-                        name="email"
-                        placeholder="your email"
-                        required
-                        className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label>
-                      Message
-                    </label>
-                    <textarea
-                      className="textarea textarea-info block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
-                      placeholder="Message"
-                      name="message"
-                      required
-                    ></textarea>
-                  </div>
-                  <div className="flex justify-end mt-6">
-                    <button disabled={isLoading} className="px-8 py-2.5 leading-5 text-white w-full transition-colors duration-300 transform bg-gray-700 rounded-md  focus:outline-none focus:bg-gray-600 hover:bg-gray-950">
-                     {
-                      isLoading ? "process...": 'Submit'
-                     }
-                    </button>
-                  </div>
-                </form>
-              </section>
+                </div>
             </div>
-          </div>
+
+
+            {/* contact cart */}
+            <div className="grid grid-cols-1 gap-12 mt-10 sm:grid-cols-2 lg:grid-cols-3 max-w-screen-xl mx-auto">
+                <div className="p-4 bg-white text-black shadow-lg md:p-6 relative px-6 py-2  bg-gradient-to-r from-purple-500 to-blue-500 rounded-md transition-all duration-500 ease-in-out
+               border-2 border-transparent hover:bg-indigo-600 hover:border-indigo-400 hover:shadow-[0_0_15px_3px_rgba(99,102,241,0.7)] hover:scale-105">
+                    <span className="inline-block p-3  rounded-lg   text-2xl">
+                        <MdOutlineAttachEmail />
+                    </span>
+
+                    <h2 className="mt-4 text-lg font-semibold text-gray-900 ">Chat to Sales</h2>
+                    <p className="mt-2 text-sm">Speak to our friendly team.</p>
+                    <p className="mt-2 text-sm">support@quicbus.com</p>
+                </div>
+
+                <div className="p-4  text-black shadow-lg md:p-6 relative px-6 py-2  bg-gradient-to-r from-purple-500 to-blue-500 rounded-md transition-all duration-500 ease-in-out
+               border-2 border-transparent hover:bg-indigo-600 hover:border-indigo-400 hover:shadow-[0_0_15px_3px_rgba(99,102,241,0.7)] hover:scale-105">
+                    <span className="inline-block p-3  rounded-lg text-2xl">
+                        <ImLocation2 />
+                    </span>
+
+                    <h2 className="mt-4 text-lg font-semibold text-gray-900 ">Visit Us</h2>
+                    <p className="mt-2 text-sm  ">Visit our office HQ.</p>
+                    <p className="mt-2 text-sm  ">Dhaka,Bangladesh</p>
+                </div>
+
+                <div className="p-4 bg-white text-black shadow-lg md:p-6 relative px-6 py-2  bg-gradient-to-r from-purple-500 to-blue-500 rounded-md transition-all duration-500 ease-in-out
+               border-2 border-transparent hover:bg-indigo-600 hover:border-indigo-400 hover:shadow-[0_0_15px_3px_rgba(99,102,241,0.7)] hover:scale-105">
+                    <span className="inline-block p-3  rounded-lg text-2xl">
+                        <FaPhone />
+                    </span>
+
+                    <h2 className="mt-4 text-lg font-semibold text-gray-900 ">Call Us</h2>
+                    <p className="mt-2 text-sm">24/7 Customer Support</p>
+                    <p className="mt-2 text-sm">+8801849317388</p>
+                </div>
+            </div>
+           <ContactForm/>
+
         </div>
-      )}
-    </div>
-  );
+    );
 };
 
 export default Contact;

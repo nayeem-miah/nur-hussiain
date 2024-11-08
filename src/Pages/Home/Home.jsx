@@ -8,9 +8,9 @@ import { FaCloudDownloadAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { IoCallSharp } from "react-icons/io5";
 import { Helmet } from "react-helmet-async";
-import ContactHome from "./ContactHome";
 import { useEffect, useState } from "react";
 import Loader from "../../Components/Loader";
+import ContactForm from "../Contact/ContactForm";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -33,7 +33,7 @@ const Home = () => {
             <AboutMe></AboutMe>
             <SkillsAll></SkillsAll>
             <HomeProjects></HomeProjects>
-            <ContactHome></ContactHome>
+            <ContactForm/>
             <div className="flex gap-2 items-center justify-center my-8 ">
               <a
                 href={pdf}

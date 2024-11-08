@@ -3,9 +3,9 @@ import Main from "../Layout/Main";
 import ErrorPages from "../Shered/ErrorPage";
 import Home from "../Pages/Home/Home";
 import About from "../Pages/About/About";
-import Contact from "../Pages/Contact/Contact";
 import Skills from "../Pages/Skills/Skills";
 import Projects from "../Pages/Projects/Projects";
+import Contact from "../Pages/Contact/Contact";
 
 const router = createBrowserRouter([
   {
