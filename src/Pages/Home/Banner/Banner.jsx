@@ -5,8 +5,13 @@ import { IoCallSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import profile from "../../../assets/profile.png";
 import pdf from "../../../assets/django-mlcv.pdf";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Banner = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <div
       className="hero"
@@ -65,7 +70,7 @@ const Banner = () => {
 
         </div>
 
-        <div className=" flex">
+        <div className=" flex" data-aos="fade-up" data-aos-duration="2000">
           <img
             src={profile}
             alt=""

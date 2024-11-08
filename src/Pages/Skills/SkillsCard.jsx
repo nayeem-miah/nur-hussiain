@@ -5,7 +5,6 @@ const SkillsCard = ({ skill }) => {
   useEffect(() => {
     Aos.init();
   }, []);
-  //   console.log(skill);
   return (
     <div data-aos="fade-up" data-aos-duration="2000">
       <div className="card bg-base-300  shadow-xl h-96">
