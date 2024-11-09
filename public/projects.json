@@ -1,42 +1,5 @@
 [
   {
-    "id": 1,
-    "title": "On Times News",
-    "description": "This project is a web application featuring article publishing, user subscriptions, and admin management functionalities. Key components include a public home page, article pages, user profiles, and an admin dashboard.",
-    "img": "https://i.ibb.co/KhBb3rt/Screenshot-2024-07-04-012605.png",
-    "serverSideLink": "https://github.com/nayeem-miah/on-Time-News-server-12",
-    "clientSideLink": "https://github.com/nayeem-miah/on-Time-News-Client-12",
-    "liveLink": "https://b9a12-ontimenews.web.app/",
-    "language": ["reactJs", "nodejs", "expressJs", "mongodb","firebase"]
-  },
-  {
-    "id": 2,
-    "title": "TeachTack Blogs",
-    "description": "This is a TeachTack Bloging sites .Every person learning This Blogs. And a user added Blogs , This Blogs pages Home page, All Blogs , Feture Blogs , login logout and wishList page The Home page serves as the gateway to TeachTack Blogs, featuring a welcoming layout with quick links to the latest and most popular blogs. It offers a snapshot of what the site offers, with highlights of top content and an easy navigation menu to explore further.The Wishlist feature allows users to save blogs they find interesting for future reading. This personalized list makes it easy for users to keep track of articles they want to revisit, ensuring they never miss out on content that piqued their interest. ",
-    "img": "https://i.ibb.co/Y8sYGGm/Screenshot-2024-07-04-015432.png",
-    "serverSideLink": "https://github.com/nayeem-miah/my-Blog-server-11",
-    "clientSideLink": "https://github.com/nayeem-miah/my-blog-client-11",
-    "liveLink": "https://my-personal-blog-fcd20.web.app/",
-    "language": ["reactJs", "nodejs", "expressJs", "mongodb"]
-  },
-  {
-    "id": 3,
-    "title": "Journy Junction",
-    "description": "This website is a Tourist Sport in Asia famous All Tourist Sport",
-    "img": "https://i.ibb.co/Tvv4R5t/Screenshot-2024-07-04-013541.png",
-    "serverSideLink": "https://github.com/nayeem-miah/b9a10-server-10",
-    "clientSideLink": "",
-    "liveLink": "https://b9a10-my-dream-country-client.web.app/",
-    "language": ["reactJs", "nodejs", "expressJs", "firebase"]
-  },
-  {
-    "id": 4,
-    "title": "RealState Home Finder",
-    "description": "This website is a Tourist Sport of Asia . A tourist spot, also referred to as a tourist attraction or destination",
-    "img": "https://i.ibb.co/kyk3tsS/Screenshot-2024-07-04-020105.png",
-    "serverSideLink": "https://github.com/nayeem-miah/b9a10-client-10-realstatc-home-Finnder",
-    "clientSideLink": "https://github.com/nayeem-miah/b9a10-client-10-realstatc-home-Finnder",
-    "liveLink": "https://cd-b9a9-b9-real-estate-09.web.app/",
-    "language": ["reactJs", "firebase"  , "javaScript", "CSS"]
+
   }
 ]
