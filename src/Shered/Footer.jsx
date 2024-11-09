@@ -76,7 +76,7 @@ const Footer = () => {
 
       <div className="text-[14px]">
         <div>
-          Copyright © ${new Date().getFullYear()} - All right reserved by MUHAMMED NUR
+          Copyright © ${new Date().getFullYear()} - All right reserved by NUR HOSSEN
         </div>
       </div>
     </footer>

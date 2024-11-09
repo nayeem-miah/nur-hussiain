@@ -2,7 +2,7 @@ const ContactForm = () => {
     return (
         <div className="bg-base-300 text-white">
             {/* lets message me */}
-            <div className="py-16">
+            <div className="py-6">
                 <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg shadow-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32">
                     <div className="flex flex-col justify-between">
                         <div className="space-y-2">

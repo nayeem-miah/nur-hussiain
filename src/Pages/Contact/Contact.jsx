@@ -8,7 +8,7 @@ import { ImLocation2 } from "react-icons/im";
 
 const Contact = () => {
     return (
-        <div className="py-20">
+        <div className="py-2">
 
             <div
                 className="w-full bg-center bg-cover h-[400px] md:h-[500px]"
@@ -19,12 +19,12 @@ const Contact = () => {
             >
                 <div className="flex items-center justify-center w-full h-full bg-gray-900/40">
                     <div className="text-center">
-                        <h1 className="text-3xl font-semibold text-white lg:text-4xl">
-                            Build your new <span className="text-blue-400">SaaS</span> Project
+                        <h1 className="text-3xl font-semibold text-[#f4a04c] lg:text-4xl">
+                            Please Contact
                         </h1>
-                        <button className="w-full px-5 py-2 mt-4 text-sm font-medium text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
-                            Start project
-                        </button>
+                       <a href="#form"> <button className=" px-6 py-3 mt-5 text-black bg-[#EA580C]     hover:bg-[#bf4503] font-bold  rounded hover:scale-1050">
+                          let's contact us
+                        </button></a>
                     </div>
                 </div>
             </div>
@@ -32,7 +32,7 @@ const Contact = () => {
 
             {/* contact cart */}
             <div className="grid grid-cols-1 gap-12 mt-10 sm:grid-cols-2 lg:grid-cols-3 max-w-screen-xl mx-auto">
-                <div className="p-4 bg-white text-black shadow-lg md:p-6 relative px-6 py-2  bg-gradient-to-r from-purple-500 to-blue-500 rounded-md transition-all duration-500 ease-in-out
+                <div className="p-4  text-black shadow-lg md:p-6 relative px-6 py-2  bg-gradient-to-r from-[#eda57e] to-[#ed5b0c] rounded-md transition-all duration-500 ease-in-out
                border-2 border-transparent hover:bg-indigo-600 hover:border-indigo-400 hover:shadow-[0_0_15px_3px_rgba(99,102,241,0.7)] hover:scale-105">
                     <span className="inline-block p-3  rounded-lg   text-2xl">
                         <MdOutlineAttachEmail />
@@ -43,7 +43,7 @@ const Contact = () => {
                     <p className="mt-2 text-sm">support@quicbus.com</p>
                 </div>
 
-                <div className="p-4  text-black shadow-lg md:p-6 relative px-6 py-2  bg-gradient-to-r from-purple-500 to-blue-500 rounded-md transition-all duration-500 ease-in-out
+                <div className="p-4  text-black shadow-lg md:p-6 relative px-6 py-2  bg-gradient-to-r from-[#eda57e] to-[#ed5b0c] rounded-md transition-all duration-500 ease-in-out
                border-2 border-transparent hover:bg-indigo-600 hover:border-indigo-400 hover:shadow-[0_0_15px_3px_rgba(99,102,241,0.7)] hover:scale-105">
                     <span className="inline-block p-3  rounded-lg text-2xl">
                         <ImLocation2 />
@@ -54,7 +54,7 @@ const Contact = () => {
                     <p className="mt-2 text-sm  ">Dhaka,Bangladesh</p>
                 </div>
 
-                <div className="p-4 bg-white text-black shadow-lg md:p-6 relative px-6 py-2  bg-gradient-to-r from-purple-500 to-blue-500 rounded-md transition-all duration-500 ease-in-out
+                <div className="p-4  text-black shadow-lg md:p-6 relative px-6 py-2  bg-gradient-to-r from-[#eda57e] to-[#ed5b0c] rounded-md transition-all duration-500 ease-in-out
                border-2 border-transparent hover:bg-indigo-600 hover:border-indigo-400 hover:shadow-[0_0_15px_3px_rgba(99,102,241,0.7)] hover:scale-105">
                     <span className="inline-block p-3  rounded-lg text-2xl">
                         <FaPhone />
@@ -65,8 +65,9 @@ const Contact = () => {
                     <p className="mt-2 text-sm">+8801849317388</p>
                 </div>
             </div>
-           <ContactForm/>
-
+            <div id='form'>
+                <ContactForm />
+            </div>
         </div>
     );
 };
