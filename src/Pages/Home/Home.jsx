@@ -34,21 +34,6 @@ const Home = () => {
             <SkillsAll></SkillsAll>
             <HomeProjects></HomeProjects>
             <ContactForm/>
-            <div className="flex gap-2 items-center justify-center my-8 ">
-              <a
-                href={pdf}
-                className="bg-gradient-to-r flex  items-center gap-1 from-purple-500 via-pink-500 to-red-500 text-white font-bold py-2 px-4 rounded "
-                download={"resume"}
-              >
-                <FaCloudDownloadAlt></FaCloudDownloadAlt> Download resume
-              </a>
-              <Link
-                to={"/contact"}
-                className="bg-gradient-to-r flex  items-center gap-1 from-purple-500 via-pink-500 to-red-500 text-white font-bold py-2 px-4 rounded "
-              >
-                <IoCallSharp></IoCallSharp> contact
-              </Link>
-            </div>
           </div>
         </div>
       )}

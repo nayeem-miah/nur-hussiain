@@ -23,39 +23,28 @@ const SkillsAll = () => {
   // console.log(skills);
   return (
     <div>
-       
+
       <h2 className="text-center font-bold text-3xl my-7"> My Skills</h2>
       <p className="text-xs lg:text-xl lg:my-9 my-5 lg:mx-0 mx-3">As a dedicated and enthusiastic Junior Frontend Developer, I possess a robust skill set and a keen eye for design. My expertise includes crafting well-structured HTML for accessible and SEO-friendly web pages, styling responsive layouts with CSS, and implementing dynamic features with JavaScript. I excel in using Tailwind CSS for rapid design, developing scalable applications with React.js, and building efficient server-side applications with Node.js and Express.js. Additionally, I have experience in integrating real-time databases and authentication with Firebase, managing data with MongoDB, and enhancing UI development with DaisyUI components. Continuously expanding my knowledge, I am committed to delivering seamless and engaging user experiences.</p>
 
       <div>
-        <Swiper
-          slidesPerView={4}
-          spaceBetween={30}
-          centeredSlides={true}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Pagination]}
-          className="mySwiper mb-4"
-        >
-          <div className=" grid grid-cols-1 gap-10">
-            {skills?.map(skill => (
-              <SwiperSlide key={skill.id}>
-                <HomeSkillCard skill={skill}></HomeSkillCard>
-              </SwiperSlide>
-            ))}
-          </div>
-        </Swiper>
+
+        <div className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-8">
+          {skills?.map(skill => (
+            <HomeSkillCard key={skill.id} skill={skill}></HomeSkillCard>
+          ))}
+        </div>
+
         <div className="flex justify-center items-center lg:py-5 py-3">
           <Link
             to={"/skills"}
-            className="bg-gradient-to-r flex  items-center gap-1 from-purple-500 via-pink-500 to-red-500 text-white font-bold py-2 px-4 rounded"
+            className="text-black bg-[#EA580C] flex items-center   hover:bg-[#bf4503] font-bold py-2 px-4 rounded"
           >
-             skills Details  <FaArrowRight></FaArrowRight>
+            skills Details  <FaArrowRight></FaArrowRight>
           </Link>
         </div>
       </div>
-      
+
     </div>
   );
 };

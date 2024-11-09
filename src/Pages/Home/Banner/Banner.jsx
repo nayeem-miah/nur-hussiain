@@ -58,7 +58,7 @@ const Banner = () => {
               className="btn text-black bg-[#EA580C] flex items-center   hover:bg-[#bf4503]"
               download={"resume"}
             >
-              <FaCloudDownloadAlt></FaCloudDownloadAlt> Download resume
+              <FaCloudDownloadAlt></FaCloudDownloadAlt> Download CV
             </a>
             <Link
               to={"/contact"}
