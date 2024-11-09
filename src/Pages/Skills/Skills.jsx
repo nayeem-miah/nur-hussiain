@@ -26,18 +26,7 @@ const Skills = () => {
             My Skills
           </h3>
           <p className=" text-xs lg:text-xl my-9">
-            As a dedicated and enthusiastic Junior Frontend Developer, I possess
-            a robust skill set and a keen eye for design. My expertise includes
-            crafting well-structured HTML for accessible and SEO-friendly web
-            pages, styling responsive layouts with CSS, and implementing dynamic
-            features with JavaScript. I excel in using Tailwind CSS for rapid
-            design, developing scalable applications with React.js, and building
-            efficient server-side applications with Node.js and Express.js.
-            Additionally, I have experience in integrating real-time databases
-            and authentication with Firebase, managing data with MongoDB, and
-            enhancing UI development with DaisyUI components. Continuously
-            expanding my knowledge, I am committed to delivering seamless and
-            engaging user experiences.
+          am a Python Django Developer skilled in building scalable and secure web applications. With a strong foundation in Python, I focus on backend development, data analysis, and scripting, always prioritizing code readability and efficiency. My expertise in the Django framework enables me to create robust applications with RESTful APIs and manage complex database operations seamlessly. Additionally, I am proficient in HTML5, CSS3, and JavaScript (ES6+), allowing me to implement dynamic, responsive, and user-friendly interfaces. I also have experience with PostgreSQL for relational database management and data modeling, ensuring optimal backend support for high-performance applications
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {skills?.map(skill => (

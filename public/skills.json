@@ -3,73 +3,36 @@
     "id": 1,
     "name": "HTML",
     "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
-
     "description": "Proficient in semantic HTML5 markup, ensuring cross-browser compatibility and accessibility."
   },
   {
     "id": 2,
     "name": "CSS",
     "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
-
     "description": "Expertise in CSS3 for layout design, animations, and responsive web development using frameworks like Bootstrap and Tailwind CSS."
   },
   {
     "id": 3,
     "name": "JavaScript",
     "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
-
     "description": "Strong grasp of JavaScript (ES6+) for dynamic front-end interactions and asynchronous programming, with experience in frameworks like React.js."
   },
-
   {
     "id": 4,
-    "name": "React.js",
-    "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
-
-    "description": "Proficient in React.js for building single-page applications (SPAs), reusable UI components, and state management using hooks and context API."
+    "name": "Python",
+    "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+    "description": "Solid understanding of Python for backend development, data analysis, and scripting, focusing on code readability and efficiency."
   },
   {
     "id": 5,
-    "name": "Node.js",
-    "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
-
-    "description": "Familiarity with Node.js for server-side development, RESTful APIs, and integration with databases like MongoDB."
-  },
+    "name": "Django",
+    "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-plain.svg",
+    "description": "Experienced with Django framework for creating scalable and secure web applications, implementing REST APIs, and managing databases."
+},
   {
     "id": 6,
-    "name": "MongoDB",
-    "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
-
-    "description": "Basic knowledge of MongoDB for NoSQL database management and integration with Node.js applications."
-  },
-
-  {
-    "id": 8,
-    "name": "Tailwind CSS",
-    "img": "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
-
-    "description": "Hands-on experience in utility-first CSS framework, creating custom designs with Tailwind's responsive and scalable components."
-  },
-  {
-    "id": 7,
-    "name": "Firebase",
-    "img": "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
-
-    "description": "Experience in Firebase for real-time database, authentication, cloud functions, and hosting static websites."
-  },
-
-  {
-    "id": 9,
-    "name": "Express.js",
-    "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
-
-    "description": "Understanding of Express.js for building web applications and RESTful APIs, handling middleware, and routing."
-  },
-  {
-    "id": 10,
-    "name": "Daisy UI",
-    "img": "https://i.ibb.co/fCbYVks/favicon-192.png",
-
-    "description": "Knowledge of Daisy UI for Tailwind CSS, leveraging its components to streamline UI development and enhance user interfaces."
+    "name": "PostgreSQL",
+    "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg",
+    "description": "Proficient in PostgreSQL for relational database management, data modeling, and executing complex SQL queries for backend operations."
   }
 ]
